@@ -13,6 +13,10 @@ export DESKTOP=/usr/share/applications/org.gnome.Ptyxis.desktop
 export DEPLOY_GTK=1
 export DEPLOY_GSTREAMER=1
 
+export PATH_MAPPING='
+  /usr/lib/ptyxis-agent:${SHARUN_DIR}/lib/ptyxis-agent
+'
+
 # Deploy dependencies
 quick-sharun \
               /usr/bin/ptyxis  \
